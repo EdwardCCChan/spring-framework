@@ -34,6 +34,12 @@ import org.springframework.util.StringUtils;
  * @author Juergen Hoeller
  * @since 2.5.2
  */
+
+/**
+ * BeanDefinitionRegistry接口的简单实现
+ * 只提供注册中心功能
+ * 无内置工厂功能
+ */
 public class SimpleBeanDefinitionRegistry extends SimpleAliasRegistry implements BeanDefinitionRegistry {
 
 	/** Map of bean definition objects, keyed by bean name. */

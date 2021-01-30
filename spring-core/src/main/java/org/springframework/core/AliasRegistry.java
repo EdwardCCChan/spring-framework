@@ -23,6 +23,7 @@ package org.springframework.core;
  * @author Juergen Hoeller
  * @since 2.5.2
  */
+// 管理别名的通用顶级接口
 public interface AliasRegistry {
 
 	/**

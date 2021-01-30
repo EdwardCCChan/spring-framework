@@ -552,6 +552,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 			StartupStep contextRefresh = this.applicationStartup.start("spring.context.refresh");
 
 			// Prepare this context for refreshing.
+			// 准备容器刷新
 			prepareRefresh();
 
 			// Tell the subclass to refresh the internal bean factory.
@@ -620,6 +621,12 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 	 * Prepare this context for refreshing, setting its startup date and
 	 * active flag as well as performing any initialization of property sources.
 	 */
+	/**
+	 * 容器刷新前的准备
+	 * 设置启动时间
+	 * 设置容器活跃标志
+	 * 执行一些初始化方法
+	 */
 	protected void prepareRefresh() {
 		// Switch to active.
 		this.startupDate = System.currentTimeMillis();
@@ -636,6 +643,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 		}
 
 		// Initialize any placeholder property sources in the context environment.
+		// 初始化属性资源,留给子类实现
 		initPropertySources();
 
 		// Validate that all properties marked as required are resolvable:

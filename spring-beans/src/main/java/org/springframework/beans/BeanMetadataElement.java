@@ -25,6 +25,7 @@ import org.springframework.lang.Nullable;
  * @author Juergen Hoeller
  * @since 2.0
  */
+// 此接口用于获取配置文件
 public interface BeanMetadataElement {
 
 	/**

@@ -45,6 +45,7 @@ import org.springframework.core.AliasRegistry;
  * @see org.springframework.beans.factory.xml.XmlBeanDefinitionReader
  * @see PropertiesBeanDefinitionReader
  */
+// 用于保存BD的注册中心接口
 public interface BeanDefinitionRegistry extends AliasRegistry {
 
 	/**
