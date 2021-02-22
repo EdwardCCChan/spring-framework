@@ -25,6 +25,8 @@ import org.springframework.util.ResourceUtils;
  * is required to provide this functionality plus extended
  * {@link org.springframework.core.io.support.ResourcePatternResolver} support.
  *
+ * 加载资源的策略接口
+ *
  * <p>{@link DefaultResourceLoader} is a standalone implementation that is
  * usable outside an ApplicationContext and is also used by {@link ResourceEditor}.
  *
